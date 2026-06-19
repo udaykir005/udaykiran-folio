@@ -172,10 +172,10 @@ function Hero() {
           <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-card animate-float">
             <img
               src={heroImg}
-              alt="AI neural network illustration"
+              alt="Udaykiran Pottabathula portrait"
               width={1280}
               height={1280}
-              className="aspect-[5/4] w-full object-cover"
+              className="aspect-[5/4] w-full object-cover object-top"
             />
           </div>
           <FloatingBadge className="absolute -left-4 top-8 hidden sm:flex" icon={<Brain className="h-4 w-4" />} label="AI Agents" />

@@ -609,7 +609,7 @@ function Footer() {
             <Linkedin className="h-4 w-4" />
           </a>
           <a href="https://github.com/udaykir005" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
-            <Linkedin className="h-4 w-4" />
+            <Github className="h-4 w-4" />
           </a>
           <a href="mailto:puk.udaykiran@gmail.com" aria-label="Email" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
             <Mail className="h-4 w-4" />

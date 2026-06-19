@@ -178,8 +178,6 @@ function Hero() {
               className="aspect-[5/4] w-full object-cover object-top"
             />
           </div>
-          <FloatingBadge className="absolute -left-4 top-8 hidden sm:flex" icon={<Brain className="h-4 w-4" />} label="AI Agents" />
-          <FloatingBadge className="absolute -right-4 bottom-10 hidden sm:flex" icon={<Workflow className="h-4 w-4" />} label="RAG Systems" />
         </div>
       </div>
     </section>

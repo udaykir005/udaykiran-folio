@@ -564,9 +564,6 @@ function Contact() {
                 <Send className="h-4 w-4" />
                 {status === "sending" ? "Sending..." : status === "sent" ? "Message Sent" : "Send Message"}
               </button>
-              <a href="#" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted">
-                <Calendar className="h-4 w-4" /> Schedule a Discussion
-              </a>
             </div>
             {status === "sent" && (
               <p className="mt-4 text-sm font-medium text-primary">Thanks! Your message has been sent — I'll get back to you soon.</p>

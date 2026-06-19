@@ -433,10 +433,10 @@ function Certifications() {
 /* -------------------- ARTICLES -------------------- */
 function Articles() {
   const articles = [
-    { title: "AI Isn't Replacing Jobs — It's Replacing Tasks", tag: "AI Strategy", read: "5 min read", icon: <Lightbulb className="h-5 w-5" /> },
-    { title: "How AI Agents Are Transforming Business Operations", tag: "AI Agents", read: "7 min read", icon: <Bot className="h-5 w-5" /> },
-    { title: "RAG vs Traditional Search: What Business Leaders Should Know", tag: "RAG", read: "6 min read", icon: <Database className="h-5 w-5" /> },
-    { title: "The Future of AI Product Management", tag: "Product", read: "8 min read", icon: <Sparkles className="h-5 w-5" /> },
+    { title: "AI Isn't Replacing Jobs — It's Replacing Tasks", tag: "AI Strategy", read: "5 min read", icon: <Lightbulb className="h-5 w-5" />, url: "https://www.linkedin.com/pulse/ai-isnt-replacing-jobsits-tasks-udaykiran-pottabathula-2fbuc/" },
+    { title: "How AI Agents Are Transforming Business Operations", tag: "AI Agents", read: "7 min read", icon: <Bot className="h-5 w-5" />, url: "#" },
+    { title: "RAG vs Traditional Search: What Business Leaders Should Know", tag: "RAG", read: "6 min read", icon: <Database className="h-5 w-5" />, url: "#" },
+    { title: "The Future of AI Product Management", tag: "Product", read: "8 min read", icon: <Sparkles className="h-5 w-5" />, url: "#" },
   ];
   return (
     <section id="articles" className="py-24">
@@ -454,9 +454,10 @@ function Articles() {
                 </div>
               </div>
               <h3 className="mt-5 font-display text-lg font-semibold leading-snug">{a.title}</h3>
-              <button className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5">
+              <a href={a.url} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5">
                 Read more <ArrowRight className="h-4 w-4" />
-              </button>
+              </a>
+
             </article>
           ))}
         </div>

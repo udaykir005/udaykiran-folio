@@ -75,7 +75,7 @@ function Nav() {
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-primary text-primary-foreground shadow-glow">
             <Sparkles className="h-4 w-4" />
           </span>
-          <span>Udaykiran<span className="text-primary">.</span></span>
+          <span>Udaykiran&nbsp;Pottabathula</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-1">

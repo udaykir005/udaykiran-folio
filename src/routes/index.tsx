@@ -144,15 +144,13 @@ function Hero() {
             <span className="text-gradient">Pottabathula</span>
           </h1>
           <p className="mt-5 text-base font-semibold text-foreground md:text-lg">
-            AI Product Manager <span className="text-muted-foreground font-normal">•</span> Product Owner{" "}
-            <span className="text-muted-foreground font-normal">•</span> Business Systems Analyst
+            Driving Business Transformation Through AI, Data, and Product Thinking
           </p>
           <p className="mt-3 max-w-xl text-lg text-muted-foreground md:text-xl">
-            Transforming Business Challenges into <span className="text-foreground font-semibold">AI-Powered Product Solutions</span>.
+            Bridging Business Needs, Technology, and AI Innovation
           </p>
           <p className="mt-4 max-w-xl text-sm text-muted-foreground md:text-base">
-            Helping organizations leverage AI, automation, analytics, and product thinking to solve
-            complex business problems and deliver measurable outcomes.
+            Helping organizations solve complex business problems through product thinking, business analysis, enterprise technology, and AI-powered innovation.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.03]">

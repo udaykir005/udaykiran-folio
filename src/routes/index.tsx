@@ -503,19 +503,40 @@ function Resume() {
 }
 
 /* -------------------- CONTACT -------------------- */
+const EMAILJS_SERVICE_ID = "service_0mqj28w";
+const EMAILJS_TEMPLATE_ID = "template_oi9lda9";
+const EMAILJS_PUBLIC_KEY = "aMs_3JKrqUo--ekRI";
+
 function Contact() {
-  const [sent, setSent] = useState(false);
-  const onSubmit = (e: FormEvent) => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
+    if (!formRef.current) return;
+    setStatus("sending");
+    setErrorMsg("");
+    try {
+      const emailjs = (await import("@emailjs/browser")).default;
+      await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, {
+        publicKey: EMAILJS_PUBLIC_KEY,
+      });
+      setStatus("sent");
+      formRef.current.reset();
+      setTimeout(() => setStatus("idle"), 5000);
+    } catch (err: any) {
+      setStatus("error");
+      setErrorMsg(err?.text || err?.message || "Failed to send message. Please try again.");
+    }
   };
+
   return (
     <section id="contact" className="py-24">
       <div className="container-page">
         <SectionHead eyebrow="Contact" title="Let's Build Something Intelligent" sub="Have a product challenge or AI initiative on your roadmap? I'd love to hear about it." />
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.2fr_1fr]">
-          <form onSubmit={onSubmit} className="rounded-3xl border border-border bg-card p-7 shadow-soft md:p-9">
+          <form ref={formRef} onSubmit={onSubmit} className="rounded-3xl border border-border bg-card p-7 shadow-soft md:p-9">
             <div className="grid gap-5 sm:grid-cols-2">
               <Field label="Name" name="name" required />
               <Field label="Email" name="email" type="email" required />
@@ -534,14 +555,25 @@ function Contact() {
                 placeholder="Tell me about your project, goals, or challenges..."
               />
             </div>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <button type="submit" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.03]">
-                <Send className="h-4 w-4" /> {sent ? "Message Sent" : "Send Message"}
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <button
+                type="submit"
+                disabled={status === "sending"}
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.03] disabled:opacity-70 disabled:hover:scale-100"
+              >
+                <Send className="h-4 w-4" />
+                {status === "sending" ? "Sending..." : status === "sent" ? "Message Sent" : "Send Message"}
               </button>
               <a href="#" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted">
                 <Calendar className="h-4 w-4" /> Schedule a Discussion
               </a>
             </div>
+            {status === "sent" && (
+              <p className="mt-4 text-sm font-medium text-primary">Thanks! Your message has been sent — I'll get back to you soon.</p>
+            )}
+            {status === "error" && (
+              <p className="mt-4 text-sm font-medium text-destructive">{errorMsg}</p>
+            )}
           </form>
 
           <div className="space-y-4">

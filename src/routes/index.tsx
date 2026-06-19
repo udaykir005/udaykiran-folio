@@ -4,7 +4,7 @@ import {
   Brain, Sparkles, Target, Users, LineChart, Workflow, Cloud, FileText,
   Award, GraduationCap, Briefcase, MessageSquare, Bot, TrendingUp, Database,
   Download, Linkedin, Github, Mail, ArrowRight, Menu, X, CheckCircle2,
-  Lightbulb, Map, Layers, Cpu, Send, Calendar, ExternalLink,
+  Lightbulb, Map as MapIcon, Layers, Cpu, Send, Calendar, ExternalLink,
 } from "lucide-react";
 import heroAsset from "@/assets/uday.png.asset.json";
 const heroImg = heroAsset.url;

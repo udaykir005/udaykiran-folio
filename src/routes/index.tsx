@@ -6,7 +6,8 @@ import {
   Download, Linkedin, Github, Mail, ArrowRight, Menu, X, CheckCircle2,
   Lightbulb, Map, Layers, Cpu, Send, Calendar, ExternalLink,
 } from "lucide-react";
-import heroImg from "@/assets/hero-ai.jpg";
+import heroAsset from "@/assets/uday.png.asset.json";
+const heroImg = heroAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({

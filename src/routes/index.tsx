@@ -381,7 +381,7 @@ function Expertise() {
     { icon: <Target className="h-5 w-5" />, title: "Product Strategy", desc: "Defining vision, positioning, and outcomes that align teams." },
     { icon: <Users className="h-5 w-5" />, title: "Agile Product Ownership", desc: "Backlog ownership, prioritization, and value delivery." },
     { icon: <FileText className="h-5 w-5" />, title: "Requirements Engineering", desc: "Translating ambiguity into precise, testable requirements." },
-    { icon: <Map className="h-5 w-5" />, title: "User Story Mapping", desc: "Mapping journeys to release plans the team can execute." },
+    { icon: <MapIcon className="h-5 w-5" />, title: "User Story Mapping", desc: "Mapping journeys to release plans the team can execute." },
     { icon: <Layers className="h-5 w-5" />, title: "Roadmap Planning", desc: "Quarterly outcomes balanced against capacity and risk." },
     { icon: <MessageSquare className="h-5 w-5" />, title: "Stakeholder Collaboration", desc: "Aligning executives, engineering, and end-users." },
     { icon: <Workflow className="h-5 w-5" />, title: "Process Optimization", desc: "Removing friction across business and delivery flows." },

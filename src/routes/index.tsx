@@ -491,7 +491,7 @@ function Resume() {
               <a href="#" className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.02]">
                 <Download className="h-4 w-4" /> Download Resume PDF
               </a>
-              <a href="#" className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-muted">
+              <a href="https://linkedin.com/in/udaykiran-pottabathula" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-muted">
                 <Linkedin className="h-4 w-4" /> View LinkedIn Profile
               </a>
             </div>

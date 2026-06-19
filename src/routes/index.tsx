@@ -545,9 +545,9 @@ function Contact() {
           </form>
 
           <div className="space-y-4">
-            <ContactCard icon={<Mail className="h-5 w-5" />} label="Email" value="hello@udaykiran.dev" href="mailto:hello@udaykiran.dev" />
-            <ContactCard icon={<Linkedin className="h-5 w-5" />} label="LinkedIn" value="linkedin.com/in/udaykiran" href="#" />
-            <ContactCard icon={<Github className="h-5 w-5" />} label="GitHub" value="github.com/udaykiran" href="#" />
+            <ContactCard icon={<Mail className="h-5 w-5" />} label="Email" value="puk.udaykiran@gmail.com" href="mailto:puk.udaykiran@gmail.com" />
+            <ContactCard icon={<Linkedin className="h-5 w-5" />} label="LinkedIn" value="linkedin.com/in/udaykiran-pottabathula" href="https://linkedin.com/in/udaykiran-pottabathula" />
+            <ContactCard icon={<Github className="h-5 w-5" />} label="GitHub" value="github.com/udaykir005" href="https://github.com/udaykir005" />
           </div>
         </div>
       </div>
@@ -605,13 +605,13 @@ function Footer() {
           ))}
         </nav>
         <div className="flex gap-2">
-          <a href="#" aria-label="LinkedIn" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
+          <a href="https://linkedin.com/in/udaykiran-pottabathula" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href="#" aria-label="GitHub" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
-            <Github className="h-4 w-4" />
+          <a href="https://github.com/udaykir005" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
+            <Linkedin className="h-4 w-4" />
           </a>
-          <a href="mailto:hello@udaykiran.dev" aria-label="Email" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
+          <a href="mailto:puk.udaykiran@gmail.com" aria-label="Email" className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card hover:bg-muted transition-colors">
             <Mail className="h-4 w-4" />
           </a>
         </div>

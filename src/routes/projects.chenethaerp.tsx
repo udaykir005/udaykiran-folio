@@ -13,8 +13,10 @@ export const Route = createFileRoute("/projects/chenethaerp")({
       { name: "description", content: "Case study: ChenethaERP — an end-to-end ERP for textile manufacturing with AWS cloud document management and Twilio WhatsApp automation. Designed, built, and supported solo." },
       { property: "og:title", content: "ChenethaERP — Textile Manufacturing ERP" },
       { property: "og:description", content: "Production-grade ERP digitizing manufacturing, inventory, accounting, dispatch, and customer communication." },
+      { property: "og:url", content: "https://udaykiran.net/projects/chenethaerp" },
+      { property: "og:type", content: "article" },
     ],
-    links: [{ rel: "canonical", href: "/projects/chenethaerp" }],
+    links: [{ rel: "canonical", href: "https://udaykiran.net/projects/chenethaerp" }],
   }),
   component: ChenethaERPCaseStudy,
 });

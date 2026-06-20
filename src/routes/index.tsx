@@ -374,20 +374,21 @@ function Projects() {
 /* -------------------- EXPERTISE -------------------- */
 function Expertise() {
   const items = [
-    { icon: <Target className="h-5 w-5" />, title: "Product Strategy", desc: "Defining vision, positioning, and outcomes that align teams." },
-    { icon: <Users className="h-5 w-5" />, title: "Agile Product Ownership", desc: "Backlog ownership, prioritization, and value delivery." },
-    { icon: <FileText className="h-5 w-5" />, title: "Requirements Engineering", desc: "Translating ambiguity into precise, testable requirements." },
-    { icon: <MapIcon className="h-5 w-5" />, title: "User Story Mapping", desc: "Mapping journeys to release plans the team can execute." },
-    { icon: <Layers className="h-5 w-5" />, title: "Roadmap Planning", desc: "Quarterly outcomes balanced against capacity and risk." },
-    { icon: <MessageSquare className="h-5 w-5" />, title: "Stakeholder Collaboration", desc: "Aligning executives, engineering, and end-users." },
-    { icon: <Workflow className="h-5 w-5" />, title: "Process Optimization", desc: "Removing friction across business and delivery flows." },
-    { icon: <Database className="h-5 w-5" />, title: "Data-Driven Decisions", desc: "Instrumenting products to learn what actually works." },
-    { icon: <Cpu className="h-5 w-5" />, title: "AI Product Development", desc: "Designing and shipping production AI features and agents." },
+    { icon: <Target className="h-5 w-5" />, title: "Product Strategy", desc: "Defining product vision, priorities, and measurable business outcomes." },
+    { icon: <FileText className="h-5 w-5" />, title: "Business & Requirements Analysis", desc: "Translating complex business needs into clear, actionable solutions." },
+    { icon: <Users className="h-5 w-5" />, title: "Agile Product Ownership", desc: "Driving backlog prioritization and value-focused delivery." },
+    { icon: <Cpu className="h-5 w-5" />, title: "AI & Automation Solutions", desc: "Designing AI-powered products, assistants, and intelligent workflows." },
+    { icon: <MapIcon className="h-5 w-5" />, title: "Roadmap & Delivery Planning", desc: "Balancing business priorities, technical constraints, and delivery goals." },
+    { icon: <MessageSquare className="h-5 w-5" />, title: "Stakeholder Leadership", desc: "Aligning business, technology, and executive stakeholders." },
+    { icon: <Workflow className="h-5 w-5" />, title: "Process Transformation", desc: "Streamlining workflows and improving operational efficiency." },
+    { icon: <Database className="h-5 w-5" />, title: "Data & Analytics", desc: "Leveraging metrics and insights to guide decisions and measure success." },
+    { icon: <Layers className="h-5 w-5" />, title: "Enterprise Systems Expertise", desc: "Bridging business operations with scalable technology solutions." },
   ];
   return (
     <section className="py-24">
       <div className="container-page">
-        <SectionHead eyebrow="Product Management Expertise" title="What I Bring to the Table" />
+        <SectionHead eyebrow="Product Management Expertise" title="How I Deliver Value" />
+
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((it) => (
             <div key={it.title} className="rounded-2xl border border-border bg-card p-6 card-hover">

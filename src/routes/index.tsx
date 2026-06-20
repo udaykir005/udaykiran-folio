@@ -263,9 +263,10 @@ function SectionHead({ eyebrow, title, sub }: { eyebrow: string; title: string; 
 /* -------------------- ABOUT -------------------- */
 function About() {
   const strengths = [
-    "Product Strategy", "Product Ownership", "Business Analysis", "Agile Delivery",
-    "Stakeholder Management", "AI Solutions", "Business Process Automation",
-    "Data Analytics", "Azure Cloud Solutions", "Requirements Management",
+    "Product Strategy", "Business Analysis", "Product Ownership",
+    "Stakeholder Management", "Requirements Management", "Agile Delivery",
+    "Enterprise Systems", "AI & Agentic Solutions", "Process Transformation",
+    "Data & Insights",
   ];
   return (
     <section id="about" className="py-24">

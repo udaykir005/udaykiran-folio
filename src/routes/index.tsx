@@ -406,8 +406,11 @@ function Expertise() {
 /* -------------------- CERTIFICATIONS -------------------- */
 function Certifications() {
   const certs = [
+    { title: "Certified SAFe 6 Product Owner/Product Manager", issuer: "Scaled Agile", icon: <Award className="h-6 w-6" /> },
     { title: "Certified Scrum Product Owner (CSPO)", issuer: "Scrum Alliance", icon: <Award className="h-6 w-6" /> },
-    { title: "IBM Data Science Certification", issuer: "IBM", icon: <Database className="h-6 w-6" /> },
+    { title: "Microsoft Certified: Azure Fundamentals", issuer: "Microsoft", icon: <Award className="h-6 w-6" /> },
+    { title: "IBM Data Science Professional Certificate", issuer: "IBM", icon: <Database className="h-6 w-6" /> },
+    { title: "IBM Generative AI for Product Managers", issuer: "IBM", icon: <Sparkles className="h-6 w-6" /> },
     { title: "MBA", issuer: "Master of Business Administration", icon: <GraduationCap className="h-6 w-6" /> },
     { title: "MS in Information Technology Management", issuer: "MSITM", icon: <GraduationCap className="h-6 w-6" /> },
   ];

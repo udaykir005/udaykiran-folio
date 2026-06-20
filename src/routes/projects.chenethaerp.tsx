@@ -591,6 +591,9 @@ function CTA() {
             <a href="https://www.linkedin.com/in/udaykiranpottabathula/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.03] transition-transform">
               <Linkedin className="h-4 w-4" /> Connect on LinkedIn
             </a>
+            <a href="https://github.com/udaykir005/ChenethaERP" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
+              <Github className="h-4 w-4" /> View on GitHub
+            </a>
             <Link to="/" hash="resume" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
               <Download className="h-4 w-4" /> View Resume
             </Link>

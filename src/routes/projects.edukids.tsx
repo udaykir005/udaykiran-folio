@@ -14,8 +14,10 @@ export const Route = createFileRoute("/projects/edukids")({
       { name: "description", content: "Case study: EduKids — a WhatsApp-based educational platform delivering daily age-appropriate vocabulary lessons to children. Product strategy, UX, automation and cloud architecture." },
       { property: "og:title", content: "EduKids — WhatsApp Vocabulary Learning Platform" },
       { property: "og:description", content: "How a WhatsApp-first product helps children build vocabulary through daily micro-learning." },
+      { property: "og:url", content: "https://udaykiran.net/projects/edukids" },
+      { property: "og:type", content: "article" },
     ],
-    links: [{ rel: "canonical", href: "/projects/edukids" }],
+    links: [{ rel: "canonical", href: "https://udaykiran.net/projects/edukids" }],
   }),
   component: EduKidsCaseStudy,
 });

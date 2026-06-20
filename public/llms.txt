@@ -1,0 +1,9 @@
+# Udaykiran Pottabathula
+
+> Portfolio of Udaykiran Pottabathula — AI Product Manager, Product Owner and Business Systems Analyst with 15+ years of experience transforming business challenges into AI-powered product solutions.
+
+## Pages
+
+- [Home](/): Overview, experience, expertise, certifications, articles and contact.
+- [ChenethaERP Case Study](/projects/chenethaerp): End-to-end ERP for textile manufacturing with AWS cloud document management and Twilio WhatsApp automation.
+- [EduKids Case Study](/projects/edukids): WhatsApp-based educational platform delivering daily age-appropriate vocabulary lessons to children.

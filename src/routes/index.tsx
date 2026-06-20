@@ -167,7 +167,7 @@ function Hero() {
         <div className="animate-fade-up">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
             <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-            Available for AI Product Leadership Roles
+            Available for Product Leadership Roles
           </div>
           <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
             Udaykiran <br />

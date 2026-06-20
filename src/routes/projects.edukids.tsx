@@ -139,6 +139,9 @@ function Hero() {
             <a href="#architecture" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.03]">
               View Architecture <Layers className="h-4 w-4" />
             </a>
+            <a href="https://github.com/udaykir005/EduKidsFunctionApp" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
+              <Github className="h-4 w-4" /> View on GitHub
+            </a>
             <Link to="/" hash="contact" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
               Contact Me <Send className="h-4 w-4" />
             </Link>

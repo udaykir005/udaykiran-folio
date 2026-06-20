@@ -70,6 +70,7 @@ function ChenethaERPCaseStudy() {
       <Problem />
       <Role />
       <Features />
+      <Screenshots />
       <Workflow_ />
       <WhatsApp />
       <AWSIntegration />
@@ -279,6 +280,32 @@ function Features() {
                 ))}
               </ul>
             </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* -------------------- SCREENSHOTS -------------------- */
+function Screenshots() {
+  const shots = [
+    { src: "https://raw.githubusercontent.com/udaykir005/udaykiran-folio/refs/heads/main/images/chenethaERP/Image1.png", caption: "Dashboard & navigation" },
+    { src: "https://raw.githubusercontent.com/udaykir005/udaykiran-folio/refs/heads/main/images/chenethaERP/Image2.png", caption: "Sales & invoice management" },
+    { src: "https://raw.githubusercontent.com/udaykir005/udaykiran-folio/refs/heads/main/images/chenethaERP/Image3.png", caption: "Manufacturing operations" },
+    { src: "https://raw.githubusercontent.com/udaykir005/udaykiran-folio/refs/heads/main/images/chenethaERP/Image4.png", caption: "Inventory & dispatch" },
+    { src: "https://raw.githubusercontent.com/udaykir005/udaykiran-folio/refs/heads/main/images/chenethaERP/Image5.png", caption: "Reports & analytics" },
+  ];
+  return (
+    <section className="bg-surface py-20">
+      <div className="container-page">
+        <SectionHead eyebrow="Product Screenshots" title="Inside ChenethaERP" sub="A look at the desktop application powering daily operations." />
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {shots.map((s) => (
+            <figure key={s.src} className="card-hover overflow-hidden rounded-2xl border border-border bg-card">
+              <img src={s.src} alt={s.caption} loading="lazy" className="aspect-video w-full object-cover transition-transform duration-500 hover:scale-105" />
+              <figcaption className="px-4 py-3 text-sm font-medium text-muted-foreground">{s.caption}</figcaption>
+            </figure>
           ))}
         </div>
       </div>

@@ -389,6 +389,39 @@ function Features() {
   );
 }
 
+/* -------------------- Screenshots -------------------- */
+function Screenshots() {
+  const shots = [
+    { src: "https://raw.githubusercontent.com/udaykir005/EduKidsFunctionApp/master/Images/Edukids1.jpeg", caption: "Daily vocabulary delivery in WhatsApp" },
+    { src: "https://raw.githubusercontent.com/udaykir005/EduKidsFunctionApp/master/Images/Edukids2.jpeg", caption: "Word, meaning and example sentence" },
+    { src: "https://raw.githubusercontent.com/udaykir005/EduKidsFunctionApp/master/Images/Edukids3.jpeg", caption: "Conversational micro-learning flow" },
+    { src: "https://raw.githubusercontent.com/udaykir005/EduKidsFunctionApp/master/Images/Edukids4.jpeg", caption: "Parent-friendly daily touchpoint" },
+  ];
+  return (
+    <section className="py-20">
+      <div className="container mx-auto max-w-6xl px-4">
+        <SectionHead eyebrow="Product Screenshots" title="See EduKids in Action" />
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {shots.map((s, i) => (
+            <figure key={i} className="group overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition hover:shadow-lg">
+              <div className="aspect-[9/16] overflow-hidden bg-muted">
+                <img
+                  src={s.src}
+                  alt={s.caption}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption className="px-4 py-3 text-sm text-muted-foreground">{s.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 /* -------------------- Architecture -------------------- */
 function Architecture() {
   const flow = [

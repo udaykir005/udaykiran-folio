@@ -374,7 +374,7 @@ function Projects() {
 /* -------------------- EXPERTISE -------------------- */
 function Expertise() {
   const items = [
-    { icon: <Target className="h-5 w-5" />, title: "Product Strategy", desc: "Defining product vision, priorities, and measurable business outcomes." },
+    { icon: <Target className="h-5 w-5" />, title: "Product Vision & Strategy", desc: "Defining product vision, priorities, and measurable business outcomes." },
     { icon: <FileText className="h-5 w-5" />, title: "Business & Requirements Analysis", desc: "Translating complex business needs into clear, actionable solutions." },
     { icon: <Users className="h-5 w-5" />, title: "Agile Product Ownership", desc: "Driving backlog prioritization and value-focused delivery." },
     { icon: <Cpu className="h-5 w-5" />, title: "AI & Automation Solutions", desc: "Designing AI-powered products, assistants, and intelligent workflows." },

@@ -654,6 +654,14 @@ function CTA() {
             >
               <Linkedin className="h-4 w-4" /> Connect on LinkedIn
             </a>
+            <a
+              href="https://github.com/udaykir005/EduKidsFunctionApp"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted"
+            >
+              <Github className="h-4 w-4" /> View Source on GitHub
+            </a>
             <Link to="/" hash="contact" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
               <Download className="h-4 w-4" /> Download Resume
             </Link>

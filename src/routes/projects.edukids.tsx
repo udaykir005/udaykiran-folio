@@ -3,7 +3,8 @@ import {
   MessageSquare, ArrowRight, ArrowLeft, CheckCircle2, Sparkles, Users,
   Workflow, Cloud, Database, Bot, Calendar, Target, Lightbulb,
   Layers, Cpu, Linkedin, Download, Smartphone, Zap, BookOpen, Baby,
-  ShieldCheck, TrendingUp, Clock, Send,
+  ShieldCheck, TrendingUp, Clock, Send, Github,
+
 } from "lucide-react";
 
 export const Route = createFileRoute("/projects/edukids")({
@@ -137,6 +138,9 @@ function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#architecture" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.03]">
               View Architecture <Layers className="h-4 w-4" />
+            </a>
+            <a href="https://github.com/udaykir005/EduKidsFunctionApp" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
+              <Github className="h-4 w-4" /> View on GitHub
             </a>
             <Link to="/" hash="contact" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
               Contact Me <Send className="h-4 w-4" />
@@ -649,6 +653,14 @@ function CTA() {
               className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.03]"
             >
               <Linkedin className="h-4 w-4" /> Connect on LinkedIn
+            </a>
+            <a
+              href="https://github.com/udaykir005/EduKidsFunctionApp"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted"
+            >
+              <Github className="h-4 w-4" /> View Source on GitHub
             </a>
             <Link to="/" hash="contact" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
               <Download className="h-4 w-4" /> Download Resume

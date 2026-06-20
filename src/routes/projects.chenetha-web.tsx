@@ -555,10 +555,10 @@ function Lessons() {
 function Roadmap() {
   const phases = [
     { phase: "Phase 1", status: "Completed", title: "Core ERP Functionality" },
-    { phase: "Phase 2", status: "Planned", title: "Advanced Reporting" },
-    { phase: "Phase 3", status: "Planned", title: "Mobile Optimization" },
-    { phase: "Phase 4", status: "Planned", title: "Workflow Automation" },
-    { phase: "Phase 5", status: "Planned", title: "AI-Powered Forecasting & Insights" },
+    { phase: "Phase 2", status: "Completed", title: "Advanced Reporting" },
+    { phase: "Phase 3", status: "Completed", title: "Mobile Optimization" },
+    { phase: "Phase 4", status: "Completed", title: "Workflow Automation" },
+    { phase: "Phase 5", status: "Completed", title: "AI-Powered Forecasting & Insights" },
     { phase: "Phase 6", status: "Planned", title: "Complete Desktop-to-Web Migration" },
   ];
   return (

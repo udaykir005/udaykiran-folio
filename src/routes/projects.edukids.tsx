@@ -78,8 +78,12 @@ function EduKidsCaseStudy() {
       {/* Features */}
       <Features />
 
+      {/* Screenshots */}
+      <Screenshots />
+
       {/* Architecture */}
       <Architecture />
+
 
       {/* Tech Stack */}
       <TechStack />

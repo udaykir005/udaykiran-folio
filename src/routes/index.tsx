@@ -303,11 +303,12 @@ function About() {
 /* -------------------- PROJECTS -------------------- */
 const PROJECTS = [
   {
-    title: "AI WhatsApp Assistant",
-    description: "AI-powered customer communication and order status assistant integrated with WhatsApp and enterprise systems.",
-    tech: ["OpenAI", "Azure Functions", "WhatsApp", "Twilio", "SQL Server"],
+    title: "EduKids WhatsApp Assistant",
+    description: "Helping children build vocabulary through daily micro-learning delivered directly through WhatsApp.",
+    tech: ["WhatsApp", "Twilio", "Azure Functions", "SQL Server", "Microsoft Azure"],
     icon: <MessageSquare className="h-6 w-6" />,
     accent: "from-emerald-500/15 to-cyan-500/10",
+    href: "/projects/edukids",
   },
   {
     title: "Business Document RAG Assistant",

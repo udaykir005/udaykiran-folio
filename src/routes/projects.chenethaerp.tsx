@@ -70,6 +70,7 @@ function ChenethaERPCaseStudy() {
       <Problem />
       <Role />
       <Features />
+      <Screenshots />
       <Workflow_ />
       <WhatsApp />
       <AWSIntegration />

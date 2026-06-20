@@ -271,18 +271,16 @@ function About() {
   return (
     <section id="about" className="py-24">
       <div className="container-page">
-        <SectionHead eyebrow="About Me" title="Bridging Business & Intelligent Technology" />
+        <SectionHead eyebrow="About Me" title="Bridging Business, Product & AI" />
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div className="rounded-3xl border border-border bg-card p-8 shadow-soft md:p-10">
-            <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-              Experienced Product Owner and Senior Business Systems Analyst with extensive experience
-              bridging business needs and technology solutions. Proven track record in product
-              management, Agile delivery, requirements engineering, process improvement, enterprise
-              systems, analytics, and <span className="text-foreground font-semibold">AI-powered business solutions</span>.
+            <p className="text-base leading-relaxed text-muted-foreground md:text-lg whitespace-pre-line">
+              Product Professional focused on transforming business challenges into scalable technology and AI-powered solutions. Combining product strategy, business analysis, Agile delivery, and technical expertise to drive meaningful business outcomes.
+              {"\n\n"}
+              Passionate about bridging business needs, user value, and emerging technologies to deliver products that create measurable impact.
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              I help organizations adopt AI thoughtfully — pairing rigorous product discovery with
-              hands-on technical fluency to ship outcomes that move the business forward.
+              Helping organizations adopt AI thoughtfully by combining product discovery, stakeholder alignment, business analysis, and technical fluency to deliver measurable business value.
             </p>
           </div>
           <div>

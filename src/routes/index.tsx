@@ -338,7 +338,7 @@ function Projects() {
   return (
     <section id="projects" className="bg-surface py-24">
       <div className="container-page">
-        <SectionHead eyebrow="Featured AI Projects" title="Shipped Outcomes, Not Just Demos" sub="A selection of AI products and intelligent systems delivered end-to-end — from discovery to production." />
+        <SectionHead eyebrow="FEATURED PROJECTS" title="Shipped Outcomes, Not Just Demos" sub="Beyond enterprise experience, these independent projects highlight hands-on work in AI, automation, and product innovation." />
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {PROJECTS.map((p) => (
             <article key={p.title} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 card-hover">

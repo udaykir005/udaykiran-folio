@@ -275,12 +275,11 @@ function About() {
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div className="rounded-3xl border border-border bg-card p-8 shadow-soft md:p-10">
             <p className="text-base leading-relaxed text-muted-foreground md:text-lg whitespace-pre-line">
-              Product Professional focused on transforming business challenges into scalable technology and AI-powered solutions. Combining product strategy, business analysis, Agile delivery, and technical expertise to drive meaningful business outcomes.
+              Product professional focused on transforming business challenges into scalable technology and AI-powered solutions. Combining product strategy, business analysis, Agile delivery, and technical expertise to drive meaningful business outcomes.
               {"\n\n"}
               Passionate about bridging business needs, user value, and emerging technologies to deliver products that create measurable impact.
-            </p>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Helping organizations adopt AI thoughtfully by combining product discovery, stakeholder alignment, business analysis, and technical fluency to deliver measurable business value.
+              {"\n\n"}
+              Helping organizations adopt AI thoughtfully through product discovery, stakeholder alignment, and data-driven decision making.
             </p>
           </div>
           <div>

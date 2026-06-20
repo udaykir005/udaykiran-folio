@@ -3,7 +3,7 @@ import {
   ArrowRight, ArrowLeft, CheckCircle2, Sparkles, Users, Workflow, Cloud,
   Database, Calendar, Target, Lightbulb, Layers, Cpu, Linkedin, Download,
   ShieldCheck, TrendingUp, Factory, Package, FileText, Truck, Receipt,
-  MessageSquare, BarChart3, Lock, Server, Boxes, Wrench, Award, Building2,
+  MessageSquare, BarChart3, Lock, Server, Boxes, Wrench, Award, Building2, Github,
 } from "lucide-react";
 
 export const Route = createFileRoute("/projects/chenethaerp")({
@@ -122,6 +122,9 @@ function Hero() {
           <Link to="/" hash="contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.03] transition-transform">
             Contact Me <ArrowRight className="h-4 w-4" />
           </Link>
+          <a href="https://github.com/udaykir005/ChenethaERP" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
+            <Github className="h-4 w-4" /> View on GitHub
+          </a>
           <Link to="/" hash="projects" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
             More Projects
           </Link>
@@ -587,6 +590,9 @@ function CTA() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href="https://www.linkedin.com/in/udaykiranpottabathula/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.03] transition-transform">
               <Linkedin className="h-4 w-4" /> Connect on LinkedIn
+            </a>
+            <a href="https://github.com/udaykir005/ChenethaERP" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
+              <Github className="h-4 w-4" /> View on GitHub
             </a>
             <Link to="/" hash="resume" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
               <Download className="h-4 w-4" /> View Resume

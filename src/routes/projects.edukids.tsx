@@ -3,7 +3,8 @@ import {
   MessageSquare, ArrowRight, ArrowLeft, CheckCircle2, Sparkles, Users,
   Workflow, Cloud, Database, Bot, Calendar, Target, Lightbulb,
   Layers, Cpu, Linkedin, Download, Smartphone, Zap, BookOpen, Baby,
-  ShieldCheck, TrendingUp, Clock, Send,
+  ShieldCheck, TrendingUp, Clock, Send, Github,
+
 } from "lucide-react";
 
 export const Route = createFileRoute("/projects/edukids")({

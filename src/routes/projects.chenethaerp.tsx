@@ -122,6 +122,9 @@ function Hero() {
           <Link to="/" hash="contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.03] transition-transform">
             Contact Me <ArrowRight className="h-4 w-4" />
           </Link>
+          <a href="https://github.com/udaykir005/ChenethaERP" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
+            <Github className="h-4 w-4" /> View on GitHub
+          </a>
           <Link to="/" hash="projects" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">
             More Projects
           </Link>

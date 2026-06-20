@@ -311,11 +311,12 @@ const PROJECTS = [
     href: "/projects/edukids",
   },
   {
-    title: "Business Document RAG Assistant",
-    description: "Conversational AI solution that allows users to interact with business documents using Retrieval Augmented Generation.",
-    tech: ["OpenAI", "Vector DB", "RAG", "Azure"],
-    icon: <FileText className="h-6 w-6" />,
+    title: "ChenethaERP",
+    description: "End-to-end textile manufacturing ERP with cloud document management and WhatsApp automation — built, deployed, and supported single-handedly.",
+    tech: [".NET", "SQL Server", "AWS", "Twilio WhatsApp", "RBAC"],
+    icon: <Layers className="h-6 w-6" />,
     accent: "from-blue-500/15 to-indigo-500/10",
+    href: "/projects/chenethaerp",
   },
   {
     title: "Sales Forecasting AI",

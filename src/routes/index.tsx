@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import {
   Brain, Sparkles, Target, Users, LineChart, Workflow, Cloud, FileText,
@@ -303,11 +303,12 @@ function About() {
 /* -------------------- PROJECTS -------------------- */
 const PROJECTS = [
   {
-    title: "AI WhatsApp Assistant",
-    description: "AI-powered customer communication and order status assistant integrated with WhatsApp and enterprise systems.",
-    tech: ["OpenAI", "Azure Functions", "WhatsApp", "Twilio", "SQL Server"],
+    title: "EduKids WhatsApp Assistant",
+    description: "Helping children build vocabulary through daily micro-learning delivered directly through WhatsApp.",
+    tech: ["WhatsApp", "Twilio", "Azure Functions", "SQL Server", "Microsoft Azure"],
     icon: <MessageSquare className="h-6 w-6" />,
     accent: "from-emerald-500/15 to-cyan-500/10",
+    href: "/projects/edukids",
   },
   {
     title: "Business Document RAG Assistant",
@@ -358,9 +359,15 @@ function Projects() {
                   </span>
                 ))}
               </div>
-              <button className="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5">
-                View Details <ArrowRight className="h-4 w-4" />
-              </button>
+              {p.href ? (
+                <Link to={p.href} className="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5">
+                  View Details <ArrowRight className="h-4 w-4" />
+                </Link>
+              ) : (
+                <button className="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5">
+                  View Details <ArrowRight className="h-4 w-4" />
+                </button>
+              )}
             </article>
           ))}
         </div>

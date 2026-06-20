@@ -356,11 +356,12 @@ const PROJECTS = [
     accent: "from-amber-500/15 to-orange-500/10",
   },
   {
-    title: "AI Knowledge Agent",
-    description: "Enterprise AI assistant providing instant answers from internal knowledge bases and product documentation.",
-    tech: ["LLMs", "RAG", "Azure AI"],
-    icon: <Brain className="h-6 w-6" />,
+    title: "Chenetha ERP Web Platform",
+    description: "Modernizing a legacy desktop ERP into a Blazor-based web platform on Microsoft Azure — improving accessibility, usability, and operational efficiency for textile manufacturing.",
+    tech: ["Blazor", ".NET 8", "Azure", "SQL Server"],
+    icon: <Cloud className="h-6 w-6" />,
     accent: "from-violet-500/15 to-fuchsia-500/10",
+    href: "/projects/chenetha-web",
   },
 ];
 

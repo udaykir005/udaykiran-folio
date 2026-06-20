@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsEdukidsRouteImport } from './routes/projects.edukids'
+import { Route as ProjectsChenethaerpRouteImport } from './routes/projects.chenethaerp'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,30 +23,39 @@ const ProjectsEdukidsRoute = ProjectsEdukidsRouteImport.update({
   path: '/projects/edukids',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsChenethaerpRoute = ProjectsChenethaerpRouteImport.update({
+  id: '/projects/chenethaerp',
+  path: '/projects/chenethaerp',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/projects/chenethaerp': typeof ProjectsChenethaerpRoute
   '/projects/edukids': typeof ProjectsEdukidsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/projects/chenethaerp': typeof ProjectsChenethaerpRoute
   '/projects/edukids': typeof ProjectsEdukidsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/projects/chenethaerp': typeof ProjectsChenethaerpRoute
   '/projects/edukids': typeof ProjectsEdukidsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/projects/edukids'
+  fullPaths: '/' | '/projects/chenethaerp' | '/projects/edukids'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/projects/edukids'
-  id: '__root__' | '/' | '/projects/edukids'
+  to: '/' | '/projects/chenethaerp' | '/projects/edukids'
+  id: '__root__' | '/' | '/projects/chenethaerp' | '/projects/edukids'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ProjectsChenethaerpRoute: typeof ProjectsChenethaerpRoute
   ProjectsEdukidsRoute: typeof ProjectsEdukidsRoute
 }
 
@@ -65,11 +75,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsEdukidsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/chenethaerp': {
+      id: '/projects/chenethaerp'
+      path: '/projects/chenethaerp'
+      fullPath: '/projects/chenethaerp'
+      preLoaderRoute: typeof ProjectsChenethaerpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ProjectsChenethaerpRoute: ProjectsChenethaerpRoute,
   ProjectsEdukidsRoute: ProjectsEdukidsRoute,
 }
 export const routeTree = rootRouteImport

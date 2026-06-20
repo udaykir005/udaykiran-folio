@@ -6,8 +6,7 @@ import {
   Download, Linkedin, Github, Mail, ArrowRight, Menu, X, CheckCircle2,
   Lightbulb, Map as MapIcon, Layers, Cpu, Send, Calendar, ExternalLink,
 } from "lucide-react";
-import heroAsset from "@/assets/uday.png.asset.json";
-const heroImg = heroAsset.url;
+const heroImg = "/udaykiran-pottabathula.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({

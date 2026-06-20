@@ -3,7 +3,7 @@ import {
   ArrowRight, ArrowLeft, CheckCircle2, Sparkles, Users, Workflow, Cloud,
   Database, Calendar, Target, Lightbulb, Layers, Cpu, Linkedin, Download,
   ShieldCheck, TrendingUp, Factory, Package, FileText, Truck, Receipt,
-  MessageSquare, BarChart3, Lock, Server, Boxes, Wrench, Award, Building2,
+  MessageSquare, BarChart3, Lock, Server, Boxes, Wrench, Award, Building2, Github,
 } from "lucide-react";
 
 export const Route = createFileRoute("/projects/chenethaerp")({

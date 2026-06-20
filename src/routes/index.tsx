@@ -11,7 +11,7 @@ const heroImg = "/udaykiran-pottabathula.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Udaykiran Pottabathula — AI Product Manager & Product Owner" },
+      { title: "Udaykiran Pottabathula" },
       { name: "description", content: "15+ years delivering enterprise technology. AI Product Manager building intelligent agents, RAG solutions and AI-powered products." },
       { property: "og:title", content: "Udaykiran Pottabathula — AI Product Manager" },
       { property: "og:description", content: "Transforming business challenges into AI-powered product solutions." },

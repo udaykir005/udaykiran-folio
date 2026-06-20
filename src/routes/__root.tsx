@@ -77,17 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Udaykiran Pottabathula — AI Product Manager & Product Owner" },
-      { name: "description", content: "AI Product Manager, Product Owner and Business Systems Analyst with 15+ years transforming business challenges into AI-powered product solutions." },
       { name: "author", content: "Udaykiran Pottabathula" },
-      { property: "og:title", content: "Udaykiran Pottabathula — AI Product Manager & Product Owner" },
-      { property: "og:description", content: "AI Product Manager, Product Owner and Business Systems Analyst with 15+ years transforming business challenges into AI-powered product solutions." },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Udaykiran Pottabathula" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Udaykiran Pottabathula — AI Product Manager & Product Owner" },
-      { name: "twitter:description", content: "AI Product Manager, Product Owner and Business Systems Analyst with 15+ years transforming business challenges into AI-powered product solutions." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb8a15d0-c1df-4253-97a8-509de993f520/id-preview-4113a1b0--667ddbc6-5119-450c-ab70-ac9820ed4c4b.lovable.app-1781896031151.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb8a15d0-c1df-4253-97a8-509de993f520/id-preview-4113a1b0--667ddbc6-5119-450c-ab70-ac9820ed4c4b.lovable.app-1781896031151.png" },
     ],
     links: [
       { rel: "icon", type: "image/png", href: "/favicon.png" },

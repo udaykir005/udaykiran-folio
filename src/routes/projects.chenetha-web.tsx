@@ -66,6 +66,7 @@ function ChenethaWebCaseStudy() {
       <Journey />
       <Discovery />
       <Features />
+      <Screenshots />
       <UserJourney />
       <Architecture />
       <AzureSection />

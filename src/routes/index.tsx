@@ -349,11 +349,12 @@ const PROJECTS = [
     href: "/projects/chenethaerp",
   },
   {
-    title: "Sales Forecasting AI",
-    description: "Machine learning solution predicting future sales trends and surfacing actionable business insights for leadership.",
-    tech: ["Python", "XGBoost", "Power BI", "Azure"],
-    icon: <LineChart className="h-6 w-6" />,
+    title: "Professional Brand Platform",
+    description: "A recruiter-focused personal brand platform showcasing product management expertise, enterprise transformations, and AI solutions — this very site.",
+    tech: ["Lovable", "React", "TypeScript", "Tailwind CSS", "Netlify", "SEO"],
+    icon: <Sparkles className="h-6 w-6" />,
     accent: "from-amber-500/15 to-orange-500/10",
+    href: "/projects/brand-platform",
   },
   {
     title: "Chenetha ERP Web Platform",

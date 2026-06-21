@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsEdukidsRouteImport } from './routes/projects.edukids'
 import { Route as ProjectsChenethaerpRouteImport } from './routes/projects.chenethaerp'
 import { Route as ProjectsChenethaWebRouteImport } from './routes/projects.chenetha-web'
+import { Route as ProjectsBrandPlatformRouteImport } from './routes/projects.brand-platform'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,15 +35,22 @@ const ProjectsChenethaWebRoute = ProjectsChenethaWebRouteImport.update({
   path: '/projects/chenetha-web',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsBrandPlatformRoute = ProjectsBrandPlatformRouteImport.update({
+  id: '/projects/brand-platform',
+  path: '/projects/brand-platform',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/projects/brand-platform': typeof ProjectsBrandPlatformRoute
   '/projects/chenetha-web': typeof ProjectsChenethaWebRoute
   '/projects/chenethaerp': typeof ProjectsChenethaerpRoute
   '/projects/edukids': typeof ProjectsEdukidsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/projects/brand-platform': typeof ProjectsBrandPlatformRoute
   '/projects/chenetha-web': typeof ProjectsChenethaWebRoute
   '/projects/chenethaerp': typeof ProjectsChenethaerpRoute
   '/projects/edukids': typeof ProjectsEdukidsRoute
@@ -50,6 +58,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/projects/brand-platform': typeof ProjectsBrandPlatformRoute
   '/projects/chenetha-web': typeof ProjectsChenethaWebRoute
   '/projects/chenethaerp': typeof ProjectsChenethaerpRoute
   '/projects/edukids': typeof ProjectsEdukidsRoute
@@ -58,18 +67,21 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/projects/brand-platform'
     | '/projects/chenetha-web'
     | '/projects/chenethaerp'
     | '/projects/edukids'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/projects/brand-platform'
     | '/projects/chenetha-web'
     | '/projects/chenethaerp'
     | '/projects/edukids'
   id:
     | '__root__'
     | '/'
+    | '/projects/brand-platform'
     | '/projects/chenetha-web'
     | '/projects/chenethaerp'
     | '/projects/edukids'
@@ -77,6 +89,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ProjectsBrandPlatformRoute: typeof ProjectsBrandPlatformRoute
   ProjectsChenethaWebRoute: typeof ProjectsChenethaWebRoute
   ProjectsChenethaerpRoute: typeof ProjectsChenethaerpRoute
   ProjectsEdukidsRoute: typeof ProjectsEdukidsRoute
@@ -112,11 +125,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsChenethaWebRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/brand-platform': {
+      id: '/projects/brand-platform'
+      path: '/projects/brand-platform'
+      fullPath: '/projects/brand-platform'
+      preLoaderRoute: typeof ProjectsBrandPlatformRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ProjectsBrandPlatformRoute: ProjectsBrandPlatformRoute,
   ProjectsChenethaWebRoute: ProjectsChenethaWebRoute,
   ProjectsChenethaerpRoute: ProjectsChenethaerpRoute,
   ProjectsEdukidsRoute: ProjectsEdukidsRoute,

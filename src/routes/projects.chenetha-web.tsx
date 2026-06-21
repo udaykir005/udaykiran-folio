@@ -66,6 +66,7 @@ function ChenethaWebCaseStudy() {
       <Journey />
       <Discovery />
       <Features />
+      <Screenshots />
       <UserJourney />
       <Architecture />
       <AzureSection />
@@ -544,6 +545,36 @@ function Lessons() {
               </div>
               <p className="mt-2 text-sm text-muted-foreground">{l.desc}</p>
             </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------- Screenshots ---------- */
+function Screenshots() {
+  const base = "https://raw.githubusercontent.com/udaykir005/udaykiran-folio/refs/heads/main/images/ChenethaWeb";
+  const shots = [
+    { src: `${base}/Image1.png`, title: "Dashboard Overview" },
+    { src: `${base}/Image2.png`, title: "Operations Module" },
+    { src: `${base}/Image3.png`, title: "Inventory Management" },
+    { src: `${base}/Image4.png`, title: "Reports & Analytics" },
+    { src: `${base}/Image5.png`, title: "Administration" },
+  ];
+  return (
+    <section className="border-t border-border bg-card/30 py-16">
+      <div className="mx-auto max-w-6xl px-6">
+        <h2 className="mb-2 text-3xl font-bold tracking-tight">Application Screenshots</h2>
+        <p className="mb-8 text-muted-foreground">A look at the Chenetha ERP web platform in action.</p>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {shots.map((s) => (
+            <figure key={s.src} className="overflow-hidden rounded-xl border border-border bg-background shadow-sm transition hover:shadow-md">
+              <a href={s.src} target="_blank" rel="noopener noreferrer">
+                <img src={s.src} alt={`Chenetha ERP Web - ${s.title}`} loading="lazy" className="h-auto w-full object-cover" />
+              </a>
+              <figcaption className="border-t border-border px-4 py-2 text-sm font-medium text-muted-foreground">{s.title}</figcaption>
+            </figure>
           ))}
         </div>
       </div>
